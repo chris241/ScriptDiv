@@ -131,7 +131,6 @@
     <Compile Include="Helpers\ApplicationIdentityContext.cs" />
     <Compile Include="Models\Division.cs" />
     <Compile Include="Models\TpAccount.cs" />
-    <Compile Include="Models\UserRole.cs" />
     <Compile Include="Models\Users.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
