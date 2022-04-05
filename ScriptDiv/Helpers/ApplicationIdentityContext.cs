@@ -21,11 +21,9 @@ namespace ScriptDiv.Helpers
 						var division = database.GetCollection<Division>("division");
 						var tpAccounts = database.GetCollection<TpAccount>("tpAccount");
 						var users = database.GetCollection<Users>("users");
-						var userRoles = database.GetCollection<UserRole>("userRole");
 						instance = new ApplicationIdentityContext
 						{
 							Users = users,
-							UserRole = userRoles,
 							TpAccounts = tpAccounts,
 							Division = division
 						};
@@ -37,7 +35,6 @@ namespace ScriptDiv.Helpers
 		public IMongoCollection<Division> Division { get; set; }
 		public IMongoCollection<TpAccount> TpAccounts { get; set; }
 		public IMongoCollection<Users> Users { get; set; }
-		public IMongoCollection<UserRole> UserRole { get; set; }
 
 		public void Dispose()
 		{
